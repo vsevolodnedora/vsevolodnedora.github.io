@@ -1,0 +1,681 @@
+/*/* ================ */
+/*    Body          */
+/* ================ */
+
+@font-face { /* Définition d'une nouvelle police nommée Source Code Pro */
+    font-family: 'SourceCodePro-Regular';
+    src: url('/css/source-code-pro/SourceCodePro-Regular.otf');
+}
+
+@font-face { /* Définition d'une nouvelle police nommée Source Code Pro */
+    font-family: 'KaushanScript-Regular';
+    src: url('/css/kaushan-script/KaushanScript-Regular.otf');
+}
+
+@font-face { /* Définition d'une nouvelle police nommée Source Code Pro */
+    font-family: 'Quicksand-Italic';
+    src: url('/css/quicksand/Quicksand-Italic.otf');
+}
+
+@font-face { /* Définition d'une nouvelle police nommée Source Code Pro */
+    font-family: 'Quicksand-Regular';
+    src: url('/css/quicksand/Quicksand-Regular.otf');
+}
+
+
+
+body 
+{
+  font-family: sans-serif;
+  color: #525252;
+  /*position:relative;*/
+}
+
+footer
+{
+  text-align: center;
+}
+
+
+#canvas-warp
+{
+  z-index: -1;
+}
+
+/* ===================== */
+/*  Def. properties for: */
+/*    title image        */
+/* ===================== */
+
+.socialmedia{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.socialmedia img{
+  display: block;
+  max-width:50px;
+  max-height:50px;
+  width: auto;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+}
+
+.website-header{
+  height: 250px;
+  width: 100%;
+  display: flex;
+  /*flex-direction: row;*/
+
+  /*background-size: 100%;*/
+  background-size: cover;
+
+  /*background: url('/images/galaxyHeader.jpg') center 0 no-repeat fixed;*/
+  background-image: url("/images/maxplank.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center -300px;
+  z-index: 99;
+}
+
+#Blog{
+  margin-top: 150px;
+  background-image: url("/images/code.JPG");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.blog-text {
+  color: white;
+  width: 20%;
+  text-align: center;
+}
+
+.titleimage
+{
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 3em;
+    text-shadow: 3px 3px 3px black;
+
+    font-size: 28px;
+    /*font-size: 5vh;*/
+
+    /*background-size: 100%;*/
+    /*background-size: cover;*/
+
+    /*background: url('/images/galaxyHeader.jpg') center 0 no-repeat fixed;*/
+    /*background-image: url("/images/maxplank.jpg");*/
+    /*background-attachment: fixed;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center -250px;*/
+    /*z-index: -1;*/
+}
+
+
+#blog-title{
+  justify-content: left; 
+}
+.titleimage h2{
+  font-family: "Quicksand-Italic";
+  font-style: italic;
+}
+
+
+.titleimage header{
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 30px;
+  /*font-size: 4.5vh;*/
+}
+
+.titleimage p{
+  padding: 20px 50px 0px 50px;
+  text-align: center;
+}
+
+
+.titles{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+}
+
+
+.p-logo{
+  font-size: 0.5em;
+  font-family: "SourceCodePro-Regular";
+  padding-top: 20px;
+}
+
+.h1-logo a {
+  font-size: 2em;
+  font-family: 'Quicksand-Regular';
+  color: #bfbfbf;
+}
+
+.h1-logo a:hover {
+  text-decoration: none;
+}
+.h1-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.image-avatar{
+  padding: 10px 10px 10px 10px;
+}
+
+.img-avatar {
+  border-radius: 50%;
+  border-width: 3px;
+  border-color: white;
+  max-width: 110px;
+  max-height: 110px;
+  border:3px solid #bfbfbf;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+}
+
+.scroll-down{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #b7b7b7;
+}
+
+.scroll-down h3{
+  font-size:20px;
+}
+
+.scroll-down img{
+  opacity: 0.25;
+  height: 40px;
+}
+
+/* ===================== */
+/*  Def. properties for: */
+/*    Figures cut from   */
+/*    papers             */
+/* ===================== */
+
+
+.section h1{
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-family: "Quicksand-Regular";
+}
+
+.section h2{
+  padding-top: 10px;
+  text-align: left;
+  font-size: 24px;
+  font-family: "Quicksand-Regular";
+  /*padding-right: 20px;*/
+}
+
+.section h3{
+  margin-top: 40px;
+  font-size: 24px;
+  font-family: "Quicksand-Regular";
+  text-align: left;
+}
+
+.paper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.papertext {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.paperimages {
+  max-width: 45%;
+}
+
+.container{
+    width: 100%;
+    overflow:hidden;
+    display:block;
+    height: 250px;
+}
+#glass{
+    margin-top: -200px;
+}
+
+figure {
+  padding-bottom: 20px;
+}
+
+figcaption {
+  font-family: georgia;
+  margin: 10px;
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+.img-paperfig{
+  max-width: 480px;
+  max-height: 480px;
+  padding: 10px 10px 10px 10px;
+}
+
+
+.text{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  max-width: 800px;
+  font-size: 14px;
+}
+
+.wrap-about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*height: calc(75vh - 250px);*/
+}
+
+a.button1{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #000000;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#000000;
+  text-align:center;
+  transition: all 0.2s;
+}
+a.button1:hover{
+  color:#FFFFFF;
+  background-color:#000000;
+}
+@media all and (max-width:30em){
+  a.button1{
+    display:block;
+    margin:0.4em auto;
+  }
+}
+
+
+#otherstuff_text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+hr {
+    height: 3px;
+    border-color: #cccccc;
+}
+/* ===================== */
+/*  Def. properties for: */
+/*   The sidebar menu    */
+/* ===================== */
+
+.navbar {
+    position: relative;
+    /*overflow: hidden;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*height: 30px;  Full-height: remove this if you want "auto" height */
+    height: auto; /* Full-height: remove this if you want "auto" height */
+    width: 100%; /* Set the width of the sidebar */
+    background-color: white;
+    border-width: 0;
+}
+
+.navbar li {
+    display: inline-block;
+}
+.navbar ul {
+  text-align: center;
+    /*white-space: nowrap;*/
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .text {
+  padding-top: 70px;
+}
+
+/*---------------------------------------------------------------*/
+
+/* ======================= */
+/*   Navigation menu links */
+/* ======================= */
+.active a {
+    color: black !important;
+    background-color: white !important;
+    text-decoration: underline !important;
+}
+
+.navbar a {
+    padding: 6px 8px 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.section::before{
+  display: block;
+  content: " ";
+  margin-top: -70px;
+  height: 70px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* When you mouse over the navigation links, change their color */
+.navbar a:hover {
+    color: black !important;
+}
+
+#navbar a {
+  font-family: Quicksand-Regular;
+  font-weight: 400;
+  font-size: 20px;
+  /*text-transform: uppercase; */
+  /*color: #991;*/
+}
+
+
+/* On smaller screens, where height is less than 450px, 
+change the style of the sidebar (less padding and a smaller font size) */
+/*@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+*/
+/*---------------------------------------------------------------*/
+
+
+/* --------- contacts ------------ */
+.contact-info
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-info .entry{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info dt
+{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.contact-info dd 
+{
+    padding-left: 10px;
+}
+/* --------- contacts ------------ */
+
+
+
+footer{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #e8e8e8;
+  width: 100%;
+}
+
+
+
+/*@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .text{
+    max-width: 80%;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .text{
+    max-width: 80%;
+  }
+}
+*/
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+/*@media only screen and (max-width: 900px) {*/
+  body {
+    /*background-color: #F09A9D; /* Red */
+  }
+
+  .titles
+  {
+    font-size: 20px;
+  }
+
+  .img-avatar{
+    max-width: 90px;
+    max-height: 90px;
+  }
+
+  .text {
+    width: 80%;
+  }
+
+  .paper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .papertext {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .paperimages {
+    max-width: 100%;
+  }
+
+  figure {
+    padding-bottom: 20px;
+  }
+
+  figcaption {
+    font-family: georgia;
+    margin: 10px;
+    font-size: 14px;
+    color: #8c8c8c;
+  }
+
+  .img-paperfig{
+    max-width: 480px;
+    max-height: 480px;
+    padding: 10px 10px 10px 10px;
+  }
+
+  #otherstuff_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar {
+      position: relative;
+      /*overflow: hidden;*/
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: auto; /* Full-height: remove this if you want "auto" height */
+      width: 100%; /* Set the width of the sidebar */
+      background-color: white;
+      border-width: 0;
+  }
+
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .text {
+    padding-top: 70px;
+  }
+
+  /* ======================= */
+  /*   Navigation menu links */
+  /* ======================= */
+  .active a {
+      color: black !important;
+      background-color: white !important;
+      text-decoration: underline !important;
+  }
+
+  .navbar a {
+      padding: 6px 8px 6px 16px;
+      text-align: center;
+      text-decoration: none;
+  }
+
+
+  /* When you mouse over the navigation links, change their color */
+  .navbar a:hover {
+      color: black !important;
+  }
+
+  #navbar a {
+    font-family: Quicksand-Regular;
+    font-weight: 400;
+    font-size: 20px;
+    /*text-transform: uppercase; */
+    /*color: #991;*/
+  }
+
+
+  /* On smaller screens, where height is less than 450px, 
+  change the style of the sidebar (less padding and a smaller font size) */
+/*  @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+  }
+*/
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+/*@media only screen and (min-width: 901px) and (max-width: 960px) {*/
+  body {
+    /*background-color: #F5CF8E; /* Yellow */
+  }
+
+  .titles
+  {
+    font-size: 20px;
+  }
+
+  .img-avatar{
+    max-width: 90px;
+    max-height: 90px;
+  }
+
+    .text {
+    width: 80%;
+  }
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-height: 700px) {
+  body {
+    /*background-color: #B2D6FF;*/
+  }
+
+
+  .website-header{
+    height: 450px;
+  }
+
+  .titleimage header{
+    font-size: 36px;
+  }
+
+  .p-logo{
+    font-size: 0.7em;
+  }
+
+  .text{
+    font-size: 16px;
+    max-width: 900px;
+  }
+
+  .scroll-down{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .scroll-down h3{
+    font-size:22px;
+  }
+
+  .scroll-down img{
+    height: 50px;
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .text {
+    padding-top: 70px;
+  }
+
+
+}
+
+
+

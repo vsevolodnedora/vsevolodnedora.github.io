@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+	<head> 
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title> Vsevolod Nedora </title>
+
+		<!-- Plugin JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Include Bootstrap library (CSS+JavaScript)-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<!-- Include MathJax to display LaTeX formulas -->
+		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script> 
+
+		<!-- Enable putting formulas between single dollar signs - By default, thez need double dollar signs: "$$ x^2 $$" -->
+		<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+		</script>
+		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/1140/2.0/1140.min.css"></script>
+
+		<!-- Warp speed -->
+		<!-- <script type="text/javascript" src="./warpspeed.min.js"></script> -->
+
+		<!-- Twitter -->
+		<script>
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+		    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
+		    js.src="//platform.twitter.com/widgets.js";
+		    fjs.parentNode.insertBefore(js,fjs);}
+		}(document,"script","twitter-wjs");
+		</script>
+
+		<script src="customize-twitter-1.1.min.js" type="text/javascript"></script>
+
+		<script>
+		var options = {
+		    "url": "css/twitter.css"
+		};
+		CustomizeTwitterWidget(options);
+		</script>
+
+		<!-- Own CSS -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+
+		<!-- AOS for facny scroll -->
+		<link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+
+		<!-- Smooth scrolling -->
+		<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 1000, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+		</script>
+	</head>
+
+
+	<!-- In the body, use ScrollSpy to enable scrolling in the navigation bar -->
+	<body data-spy="scroll" data-target=".navbar" data-offset="100"> 
+	<!-- <body>  -->
+
+		<!-- ================= -->
+		<!--  TITLE IMAGE      -->
+		<!-- ================= -->
+
+		<div class="website-header">
+
+<!-- 			<div class="twitter">
+				<a class="twitter-timeline" href="https://twitter.com/vsevolodnedora?ref_src=twsrc%5Etfw"
+				data-chrome="transparent noscrollbar noheader nofooter noborders"
+				data-width="400"
+				data-height="400">
+				Tweets by vsevolod_nedora</a> 
+				<script async src="https://platform.twitter.com/widgets.js" 
+				charset="utf-8">
+				</script>
+			</div>
+
+ -->
+			<div class="titleimage">
+				<header>
+					<span class="image-avatar">
+						<img class="img-avatar" src="images/profilepic2.jpeg" alt="Avatar" width="160" height="160">
+					</span>
+					<div class="titles">
+						<p class="h1-logo" id="logo"><a href="#"> <strong>Vsevolod Nedora</strong></a></p>
+					</div>
+				</header>
+				<p class="p-logo">Numerical modelling | Machine Learning | Statistics</p>					
+				<div class="socialmedia">
+					<a href="https://github.com/PartumSomnia"><img src="images/GitHub-Mark.png"></a>
+					<a href="https://www.linkedin.com/in/vsevolod-nedora-a489b2269/"><img src="images/linkedin.png"></a>
+					<a href="https://twitter.com/vsevolodnedora"><img src="images/twitter.png"></a>
+				</div>
+			</div>	
+		
+		</div>
+
+
+		<!-- ================= -->
+		<!--  Side navigation  -->
+		<!-- ================= -->
+
+		<!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+ 			<!-- <div class="navbar-collapse collapse borderXwidth" id="navbar"> -->
+  				<ul class="nav navbar-nav">
+  		  			<li class="nav-item active"> <a class="anchor" href="#about">About</a> </li>
+  		  			<li class="nav-item"> <a class="anchor" href="#research">Research</a> </li>
+<!--   		  			<li class="nav-item"> 
+  		  				<a class="anchor" href="#TeachingOutreach">Outreach</a> 
+  		  			</li>
+ -->  		  			<!-- <li class="nav-item"> <a class="anchor" href="#cv">CV</a> </li> -->
+  		  			<li class="nav-item"> <a class="anchor" href="#Blog">Tutorials</a> </li>
+  		  			<li class="nav-item"> <a class="anchor" href="#OtherStuff">Other stuff</a> </li>
+  		  			<li class="nav-item"> <a class="anchor" href="#contact">Contact</a> </li>
+  		  			<li class="nav-item"> <a class="anchor" href="./resources/CV_VNEDORA_industry.pdf">CV</a> </li>
+  		  			<li class="nav-item"> <a class="anchor" href="./resources/CV_VNEDORA_academic.pdf">(Academic CV)</a> </li>
+  		  		</ul>
+          	<!-- </div> -->
+    	</nav>
+
+		<!-- Section 1 -->
+		<div class="text">
+		<canvas id="canvas-warp" style="position:fixed; top:0; left:0; width:100%; height:100%;"></canvas>
+<!-- 		<script>
+			// var x=new WarpSpeed("canvas-warp", {density:2,
+			// 									shape:"square",
+			// 									warpEffectLength:"10",
+			// 									depthFade:false,
+			// 									backgroundColor:"#FFFFFF",
+			// 									starColor:"#808080",
+			// 									speed:0.1
+			// 									});
+			// var x=new WarpSpeed("canvas-warp", {density:30,
+			// 									shape:"square",
+			// 									warpEffectLength:"10",
+			// 									depthFade:false,
+			// 									backgroundColor:"#FFFFFF",
+			// 									starColor:"#808080",
+			// 									speed:0.1
+			// 									});
+		</script>
+ -->
+		<div id="wrap-about" class="wrap-about">
+			<div id="about" class="section" data-aos="fade-up">
+				<h1>About</h1>
+				<p>
+				I am an experienced modeler and data scientist with more than 5 years of professional experience in <strong>numerical simulations, data analysis, and machine learning</strong>. Developing and applying complex algorithms I have managed research projects and designed pipelines for “end-to-end” analysis of Big Data. I thrive in managing projects and working in multidisciplinary collaborations. I am passionate about modeling complex systems and making quantitative predictions from data. To this end, I prefer to continuously learn new tools, and methods and apply them to practical and theoretical problems. 
+				</p>
+				<p>
+				Please see below a non-exhaustive summary of my current and published reserach projects. <strong>See also my <a href="./resources/CV_VNEDORA_industry">CV</a> for a summary of my achievements.</strong>
+				</p>
+			</div>
+			<div class="scroll-down">
+				<h3>Scroll Down</h3>
+				<img src="images/down-arrow.png">
+			</div>
+		</div>
+		
+		<!-- Section 2 -->
+<!--
+		<div data-aos="flip-right" data-aos-offset=250 data-aos-duration="1000"><hr/></div>
+		<div id="research" class="section" data-aos="fade-up" data-aos-offset=300>
+			<h1>FEATURED - UMAP applied to astrophysical time-series</h1>
+
+            <div id="batumapp" class="paper">
+
+                <div class="papertext">
+
+                	<div>
+						<p>This dashboard shows the embedding, using UMAP, of gamma-ray burst prompt light curves measured with the Neil Gehrels Swift Satellite. The unsupervised embedding separates prompt emission between long and short GRBs, while revealing previously unseen internal structure in the main clusters.</p> 
+                	</div>
+
+					<div class="poster-button">
+						<a href="http://batumapp.herokuapp.com/" class="button1">Interactive Dashboard</a>
+					</div>
+
+                </div>
+                <div class="paperimages">
+					<figure>
+						<img src="images/BATUMAPP/batumapp.png" alt="lcs" width="100%" align="right">
+					</figure>
+                </div>                
+		</div>
+-->
+		<div data-aos="flip-right" data-aos-offset=250 data-aos-duration="1000"><hr/></div>
+		<div id="research" class="section" data-aos="fade-up" data-aos-offset=300>
+			<h1>Research</h1>
+
+
+			<p>My journey into the field of Astrophysics started in 2013 when I carried out my first research internship at Pushchino Radio Astronomy Observatory, Moscow, on modeling Active Galactic Nuclei radio emission. There I  design my first <strong>numerical model <strong> in C++ to infer the size of the source from limited observational data. This work sparked my interest in <strong>numerical simulations and parameter inference <strong>. Eventually, this interest has led me to Bonn, where I worked on <strong>statistical analysis of Wolf-Rayet star properties <strong>, creating my own python model for their winds. 
+			</p>
+			<p>During my PhD I entered the field of <strong>numerical relativity and multimessenger astronomy </strong> where I focus my research now. This is a multidisciplinary, highly diverse field. My interest lies in modeling <strong>Gamma Ray Burst and Kilonova afterglows</strong> and relating their observables to the parameters of the progenitor system, i.e., merging compact objects. 
+			</p>
+
+			<h2>Gamma-Ray Burst and Kilonova afterglow skymaps</h2>
+			<p>Gamma-ray bursts and kilonova afterglows are electromagnetic signatures that can accompany mergers of compact objects at least one of which is a neutron star (NS). Being able to understand these signatures is a key to understanding the properties of NSs, and yet unknown properties matter at supranuclear densities. Synthetic images of these signatures provide insights into these properties. Due to large variations in the temporal and spatial scales of the problem, hydrodynamic simulations are numerically expensive. Thus, semi-analytic, models, build to capture key physics of these simulations are a useful and informative tool to study how the Gamma-ray bursts and kilonova afterglows may appear in the sky.
+			</p>
+
+
+			<h3>Synthetic radio images of structured GRB and kilonova afterglows </h3>
+			<h4> <i>Vsevolod Nedora, Tim Dietrich, Masaru Shibata</i> <br>
+			<a href="https://arxiv.org/abs/2302.12850">arXiv: 2302.12850</a></h4>
+
+            <div id="paper2d" class="paper">
+
+                <div class="papertext">
+
+                	<div>
+						<p>Radio images, i.e., sky maps, of the gamma-ray burst afterglows have long since been used to infer key information on the properties and geometry of emitting matter. In this work, we show how sky maps of the kilonova afterglows can be used to study the ejecta properties and parameters of merging neutron stars (NSs). We employ the semi-analytic code PyBlastAfterglow and model the emission of ejecta extracted from ab-initio numerical relativity simulations of NS merger.
+						</p> 
+
+						<p>PyBlastAfterglow discretizes ejecta into elements with their own velocity and polar angle and treating them as a part of a spherical flow, computes the dynamical evolution of ejecta as it moves through the interstellar medium. When computing synchrotron radiation from ejecta, the code employs the global cooling treatment but accounts for the presence of both thermal and non-thermal electron populations behind the forward shock of each elemental blastwave. Relativistic and time-of-arrival effects are included in the calculation of the observed flux density.
+						</p>
+							
+						<p>In this paper, we show examples of kilonova afterglow sky. We discuss their properties, such as image size and the motion of the flux centroid. We find that binary NS mergers where NSs have equal mass and small radii (compact) produce larger images with the more pronounced motion of the flux centroid. We also show that if the presence of a kilonova afterglow is not taken into account, GRB afterglow sky map analysis may give systematically underestimated jet core velocity, even if the former is much dimmer than the latter. 
+						</p>
+
+                	</div>
+<!--
+					<div class="poster-button">
+						<a href="./resources/PosterIAU/Poster.pdf" class="button1">Poster summarizing the paper</a>
+					</div>
+-->
+                </div>
+                <div class="paperimages">
+
+					<figure>
+						<img src="images/Nedora2023a/kNafgExample.png" alt="lcs" width="100%" align="right">
+						<figcaption>
+							Fig. 1: Example of the kilonova afterglow from an equal mass binary neutron star merger simulation.
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img src="images/Nedora2023a/GRBandKNafgs2.png" alt="nuc" width="100%" align="right">
+						<figcaption>
+							Fig. 2: Effect of the presence of the kilonova afterglow on the properties of GRB afterglow sky map (image size and flux centroid position). 
+						</figcaption>
+					</figure>
+
+                </div>                
+            </div>
+
+<!--             <div id="paperFlares" class="paper">
+
+                <div class="papertext">
+
+                    <p>The preliminary results of 2D simulations on a moving mesh were reported in a <a href="https://ras.ac.uk/poster-contest/eliot-ayache">poster</a> presented at the RAS early-career poster exhibition. The code uses a Arbitrary-Lagrangian-Eulerial (ALE) approach that allows us to specify how we want the mesh to use. This is very helpful is sovling multi-scale dynamics and radiation problems.
+                    </p>
+                    <p>Right: Simulation of a hot jet propagating in a diffuse environment. The zones move at fluid velocity.
+                    </p>
+
+                </div>
+                <div class="paperimages">
+
+                    <video width="420" height="315" autoplay loop muted playsinline>
+                      <source src="resources/movie.mp4" type="video/mp4" />
+                    </video>
+
+                </div>
+
+
+            </div>
+ -->
+<!-- // MOVIE!
+			<h3>Example of a <a href="https://github.com/partumsomnia/PyBlastAfterglow">PyBlastAfterglow</a> dynamical simulation</h3>
+
+            <p>Below: Rayleigh-Taylor instability in the contact discontinuity of GRB afterglow blast wave between the forward shock on the right and the reverse shock propagating left towards the back of the ejecta. Top panel shows pressure. Bottom panel shows rest-mass density. 
+            (Simulation by Rupert Eardley, Master Student at the University of Bath)</p>
+
+            <div class="container">
+                <video id="glass" width="100%" autoplay loop muted playsinline>
+                  <source src="resources/movie2.mp4" type="video/mp4" />
+                </video>
+            </div>
+-->
+
+			<!-- <p>A GRB involves the creation of a compact object (Black Hole (BH) or Neutron Star (NS)). During the system’s collapse, some of the matter forms a very hot accretion disk around the newly created compact object. This matter is accreted at a super-Eddington rate and can give rise to relativistic outflows. This system is thus referred to as the central engine.
+			</p>
+			 -->
+
+			<h3>Modeling kilonova afterglows: Effects of the thermal electron population and interaction with GRB outflows </h3>
+            <h4> <i>Vsevolod Nedora, Tim Dietrich, Masaru Shibata, Martin Pohl, </i> <br> <a href="https://doi.org/10.1093/mnras/stad175">MNRAS, 520, 2727-2746</a> - <a href="https://arxiv.org/abs/2208.01558">arXiv: 2208.01558</a></h4>
+
+			<div id="paperFlares" class="paper">
+
+				<div class="papertext">
+
+					<p>In 2017, a merger of two neutron stars (NSs) was observed in gravitational waves and the electromagnetic spectrum. Both, gamma-ray burst afterglow, GRB120817A,  and the kilonova, AT2017gfo, were detected and later used to infer the properties of merged NSs. The afterglow from the kilonova, however, has not been unambiguously detected so far. If observed, it would provide important information about the very fast matter ejected at the momtn of merger and this shed light on the properties of matter at supra-nuclear densities.
+					</p>
+					<p>In this paper, we employ a semi-analytic code PyBlastAfterglow to study the properties of the kilonova afterglow from ejecta produced by a set of ab-initio numerical relativity binary NS merger simulations. We demonstrate the validity of comparing its methods and performance to others available in the literature and include new physics, such as the presence of two electron populations behind the forward shock. Additionally, we model the gamma-ray burst afterglow and investigate how Kinova afterglow changes in its presence. 
+					</p>
+					<p>We find that synchrotron emission from thermal electron populations determines the early kilonova afterglow signature, even dominating the overall emission if the interstellar medium (ISM) density is sufficiently high. The spectral evolution of the afterglow light curve is most prominent in the radio band, and if observed, could allow us to reconstruct the ejecta velocity distribution. The pre-acceleration of ISM by GRB ejecta makes kilonova afterglow dimmer, but by ~40% at most and at very early times and hence, may not be detectable. 
+					</p>
+
+				</div>
+				<div class="paperimages">
+
+					<figure>
+						<img src="images/Nedora2022b/trnsitionFreq.png" alt="lfac profile" width="100%" align="right">
+						<figcaption>
+							Fig. 1: A relation between transition frequeny (between spectra dominated by thermal and non-thermal electrons) and ligh curve peak time. This relation may allow to infer binary properties from observations. 
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img src="images/Nedora2022b/lcInteraction.png" alt="flare" width="100%" align="right">
+						<figcaption>
+							Fig. 2: Effect of the ISM pre-acceleration by GRB ejecta on the kilonova afterglow for each angular layer of the kilonova ejecta. Emission is first dimmer, than slighly birghter than if there was no GRB ejecta. 
+						</figcaption>
+					</figure>
+
+				</div>
+
+			</div>
+
+			<h2>Statistics & Machine Learning</h2>
+			
+            <h3>Mapping dynamical ejecta and disk masses from numerical relativity simulations of neutron star mergers</h3>
+            <h4><i> Vsevolod Nedora, Federico Schianchi, Sebastiano Bernuzzi, David Radice, Boris Daszuta, Andrea Endrizzi, Albino Perego, Aviral Prakash and Francesco Zappa </i> <br> <a href="https://doi.org/10.1088/1361-6382/ac35a8">Class. Quant. Grav., 39, 015008</a> - <a href="https://arxiv.org/abs/2011.11110">arXiv: 2011.11110</a></h4>
+
+            <div id="paperFlares" class="paper">
+
+                <div class="papertext">
+
+                    <p>The most accurate method to study properties of matter ejected during neutron star (NS) mergers is to perform numerical relativity (NR) simulations. These simulations, however, are very computationally expensive and rare. It is thus of utmost importance to use all available simulations and investigate statistical trends in data and predictive power of various fitting formulae to ejecta properties. 
+                    </p>
+
+                    <p> In this work, we perform a systematic study of ejecta properties, such as mass, velocity, and electron fraction, as well as the mass of the disk, from all available NR simulations. We employ standard statistical methods to assess the predictive power of various fitting formulae, both tailored to the problem, and generic polynomials, agnostic to the physical settings.
+                    </p>
+
+                    <p>We find that different treatments of neutron transport in NR simulations introduce systematic differences in ejecta properties. Additional systematic errors are introduced by different methods used to extract ejecta properties from NR simulations by different groups. In light of this, a simple two-parameter polynomial fitting formula is found to reproduce the data on par or better than a more sophisticated fitting formuale.
+                    </p>
+
+                </div>
+                <div class="paperimages">
+
+                    <figure>
+                        <img src="images/Nedora2021b/ej_mej_vej_groups.png" alt="network" width="100%" align="right">
+                        <figcaption>
+                            Fig. 1: Compiled dataset for ejecta mass and mass-averaged velocity with values inferred from kilonova AT2017gfo shown as red and blue boxes.
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/Nedora2021b/residuals_sets_vej_res.png" alt="network" width="100%" align="right">
+                        <figcaption>
+                            Fig. 2: Residual plot for fittin the ejecta mass-averaged velocity with various fitting formuale. 
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+            </div>
+
+
+			<!-- <h2>Conference talks and seminars</h2> -->
+			<!-- <p>Yamada conference yohomaha</p> -->
+			<!-- <p>Coming Soon</p> -->
+		</div>
+		<!-- Section 3 -->
+
+<!-- 		</div>
+		<div class="website-header">
+			<div class="titleimage">
+				<header>
+					<div class="titles">
+						<p class="h1-logo" id="logo"><a href="#"> <strong>Other Resources</strong></a></p>
+					</div>
+				</header>
+			</div>		
+		</div>
+		<div class="text">
+ -->
+		<!-- <div data-aos="flip-right" data-aos-offset=250 data-aos-duration="1000"><hr/></div>
+		<div id="TeachingOutreach" class="section" data-aos="fade-up" data-aos-offset=300>
+			<h1>Outreach</h1>
+			<h3>Lecturing</h3>
+				<ul>
+					<li>2nd year Physics: C programming labs (1 year)</li>
+				</ul>
+			<h3>Demonstrating</h3>
+			<ul>
+				<li>2nd year Physics: C programming labs (3 years)</li>
+				<li>3rd year Physics: Computational Physics B in C++ (1 year)</li>
+				<li>3rd year Physics: Computational Astrophysics in Python/C++ (1 year)</li>
+			</ul>
+			<h3>Student project co-supervision</h3>
+			<ul>
+				<b>Bsc Thesis:</b> Machine learning with Swift XRT afterglow light-curves (Claire Anderson & Tara Howard) <br>
+				Head Supervisor: Hendrik Van Eerten / Co-supervisors: Tim Dietrich, Masaru Shibata
+			</ul>
+			<h3>Public outreach</h3>
+			<ul>
+				<li>Pint of Science 2019 (Bath, UK): <a href="https://pintofscience.co.uk/event/things-in-space" class="active">Badly behaved Gamma-Ray Bursts</a></li>
+			</ul>
+		</div> -->
+		<!-- Section 4 -->
+<!-- 		<div data-aos="flip-right" data-aos-offset=250 data-aos-duration="1000"><hr/></div>
+		<div id="cv" class="section" data-aos="fade-up" data-aos-offset=300>
+			<h1>CV</h1>
+			<p>Coming soon</p>
+		</div>
+ -->		<!-- Section 5 -->
+
+		</div>
+		</div>
+		<div id="Blog" class="website-header">
+
+            <div id="blogText" class="blog-text">
+				<!--
+                <h3>
+                    Monte-Carlo simulations in Astrophysics <br>
+                </h3>
+                <h4>
+                    Check out the <a href="https://github.com/eliotayache/MCWorkshop/blob/master/MC_simulations.ipynb" class="active">jupyter notebook</a>
+                </h4>
+				-->
+            </div>
+
+            <div id="blogText2" class="blog-text">
+				<!--
+                <h3>
+                    EAS and NAM 2021: Introduction to Machine Learning in Astrophysics<br>
+                </h3>
+                <h4>
+                    Check out the <a href="https://github.com/eliotayache/ML/blob/master/EAS2021/EAS21_beginner_workshop.ipynb" class="active">jupyter notebook</a>
+                </h4>
+				-->
+            </div>
+
+            <div id="blogText3" class="blog-text">
+                
+            </div>
+
+		</div>
+		<div class="text">
+		
+
+
+		<!-- Section 5 -->
+		<!-- <div data-aos="flip-right" data-aos-offset=250 data-aos-duration="1000"><hr></div> -->
+		<!-- <div id="OtherStuff" class="section" data-aos="fade-up" data-aos-offset=300> -->
+		<hr>
+		<div id="OtherStuff" class="section">
+			<h1>Other Stuff</h1>
+
+			<div id="otherstuff_text">
+				<div class="entry">
+					<h2>Astrophysics</h2>
+					<a href="https://ui.adsabs.harvard.edu/classic-form" class="active">NASA Astro Data System</a> <br>
+                    <a href="https://jobregister.aas.org/jobs/current" class="active">AAS job register</a>
+				</div>
+
+				<div class="entry">
+					<h2>Code</h2>
+					<a href="https://devhints.io/vim" class="active">Vim Cheat Sheet</a>
+				</div>
+
+				<div class="entry">
+					<h2>Good Tutorials</h2>
+					<a href="https://distill.pub/" class="active">Distill.pub - Understandable ML</a> <br> <br>
+					<a href="https://stat.ethz.ch/education/semesters/ss2012/regression/Part5.pdf" class="active">Linear regression</a> <br>
+					<a href="https://storage.ning.com/topology/rest/1.0/file/get/1211570060?profile=original" class="active">Data science cheat sheet</a> <br>
+					<a href="https://arxiv.org/pdf/2009.10862.pdf" class="active">Intuitive Gaussian Processes</a> <br>
+					<a href="https://peterroelants.github.io/posts/gaussian-process-tutorial/" class="active">Gaussian Processes from scratch</a> <br>
+				</div>
+			</div>
+
+		</div>
+		<!-- Section6 -->
+		<!-- <div data-aos="flip-right" data-aos-offset=150 data-aos-duration="1000"><hr></div> -->
+		<!-- <div id="contact" class="section" data-aos="fade-up" data-aos-offset=300> -->
+		<hr>
+		<div id="contact" class="section">
+			<h1>Contact</h1>
+			<p>I am always open to discus my research and potential new scientific or industry project. Please, do not hesitate to contact me. </p>
+			<dl class="contact-info">
+<!-- 			    <div class="entry">
+			    	<dt>Institution: </dt> <dd><a href="http://www.bath.ac.uk/">University of Bath</a>, UK <br>
+			    		<a href="http://www.bath.ac.uk/departments/department-of-physics/">Depart of Physics</a></dd>
+			    </div>
+-->			    <div class="entry">
+				    <dt>Email:</dt> <dd><a href="mailto:vsevolod.nedora@aei.mpg.de">vsevolod.nedora@aei.mpg.de</a></dd>
+				</div>
+			    <div class="entry">
+				    <dt>Twitter:</dt> <dd><a href="https://twitter.com/vsevolodnedora">vsevolodnedora</a></dd>
+				</div>
+			    <div class="entry">
+				    <dt>Address:</dt> <dd>
+						Dr. Vsevolod Nedora <br>
+						Am Mühlenberg 1 <br>
+						114476 Potsdam, Germany <br>
+				    </dd>
+				</div>
+			</dl>
+		</div>
+
+
+	</div>
+
+	<footer>
+	©2022-2023 Vsevolod Nedora, all rights reserved.
+ 	</footer>
+
+	<!-- Sticky navbar -->
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+	    navbar.classList.add("sticky")
+	  } else {
+	    navbar.classList.remove("sticky");
+	  }
+	}
+	</script>
+
+	<script src="bower_components/aos/dist/aos.js"></script>
+	<script>
+	   AOS.init();
+	</script>
+
+	<!-- Scroll -->
+	<!-- <script src="scroll.js"></script> -->
+	<script>
+		$(document).ready(function(){
+		    var $win = $(window);
+		    $('.website-header').each(function(){
+		        var scroll_speed = 2;
+		        var $this = $(this);
+		        $(window).scroll(function() {
+		            // var bgScroll = -(($win.scrollTop() - $this.offset().top) / scroll_speed);
+		            // var bgScroll = -(($win.scrollTop() - $this.offset().top) / scroll_speed) - $win.height()/3.;
+		            var bgScroll = -(($win.scrollTop() - $this.offset().top)/ scroll_speed) - 300;
+		            var bgPosition = 'center '+ bgScroll + 'px';
+		            $this.css('background-position', bgPosition);
+		        });
+		    });
+		});
+	</script>
+
+	<script>
+		$(window).bind('scroll', function() {
+		     if ($(window).scrollTop() > 100) {
+		         $('.scroll-down').hide();
+		     }
+		     else {
+		         $('.scroll-down').show();
+		         $(".scroll-down").css("opacity", 1 - $(window).scrollTop() / 100);
+		     }
+		});
+	</script>
+<!-- 
+	<script type="text/javascript">
+		window.onload = function() {
+		    if(!window.location.hash) {
+		        window.location = window.location + '#loaded';
+		        window.location.reload();
+		    }
+		}
+	</script>
+ -->
+	</body>
+</html>
+
+
