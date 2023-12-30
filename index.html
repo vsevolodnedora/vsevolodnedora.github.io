@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 	<head> 
 		<!-- Required meta tags -->
 	    <meta charset="utf-8">
@@ -106,13 +105,13 @@
 			<div class="titleimage">
 				<header>
 					<span class="image-avatar">
-						<img class="img-avatar" src="images/profilepic2.jpeg" alt="Avatar" width="160" height="160">
+						<img class="img-avatar" src="images/profilepic2_cropped.jpeg" alt="Avatar" width="320" height="320">
 					</span>
 					<div class="titles">
 						<p class="h1-logo" id="logo"><a href="#"> <strong>Vsevolod Nedora</strong></a></p>
 					</div>
 				</header>
-				<p class="p-logo">Numerical modelling | Machine Learning | Statistics</p>					
+				<p class="p-logo">Data Science | Software Engineering | Numerical Modelling | Machine Learning </p>					
 				<div class="socialmedia">
 					<a href="https://github.com/vsevolodnedora"><img src="images/GitHub-Mark.png"></a>
 					<a href="https://www.linkedin.com/in/vsevolod-nedora-a489b2269/"><img src="images/linkedin.png"></a>
@@ -140,8 +139,8 @@
   		  			<li class="nav-item"> <a class="anchor" href="#Blog">Tutorials</a> </li>
   		  			<li class="nav-item"> <a class="anchor" href="#OtherStuff">Other stuff</a> </li>
   		  			<li class="nav-item"> <a class="anchor" href="#contact">Contact</a> </li>
-  		  			<li class="nav-item"> <a class="anchor" href="./resources/CV_VNEDORA_industry.pdf">CV</a> </li>
-  		  			<li class="nav-item"> <a class="anchor" href="./resources/CV_VNEDORA_academic.pdf">(Academic CV)</a> </li>
+  		  			<li class="nav-item"> <a class="anchor" href="./resources/NedoraCV_upd.pdf">CV</a> </li>
+  		  			<!-- <li class="nav-item"> <a class="anchor" href="./resources/CV_VNEDORA_academic.pdf">(Academic CV)</a> </li> -->
   		  		</ul>
           	<!-- </div> -->
     	</nav>
@@ -170,13 +169,30 @@
  -->
 		<div id="wrap-about" class="wrap-about">
 			<div id="about" class="section" data-aos="fade-up">
-				<h1>About</h1>
+				<!-- <h1>About</h1> -->
 				<p>
-				I am an experienced modeler and data scientist with more than 5 years of professional experience in <strong>numerical simulations, data analysis, and machine learning</strong>. Developing and applying complex algorithms I have managed research projects and designed pipelines for “end-to-end” analysis of Big Data. I thrive in managing projects and working in multidisciplinary collaborations. I am passionate about modeling complex systems and making quantitative predictions from data. To this end, I prefer to continuously learn new tools, and methods and apply them to practical and theoretical problems. 
+					My professional journey began with a small literature review on black holes I did in a cozy little cafe near my home. 
+					Now, almost ten years, bachelor, master, Ph.D and a postdoc, later it takes a sharp turn. In my academic career I was a part of many research groups, collaborating 
+					internally, externally and internationally. It was a great experience. However, my academic path has also ingrained in me a strong streak of independence and self-reliance. 
+					Perhaps, a culmination of this is a software package I designed, called PyBlastAfterglow. It started as a small python code to model afterglow emission from mildly relativistic ejecta. 
+					I applied it to ejecta produced in binary neutron star mergers and published results in several papers. Later, as the code grew, I decided to port it to C++, so that I can perform further optimizations. 
+					This, however, proved to be challenging and a double-sided coin. I did achieve higher efficiency but at a cost of slower development time. However, I successfully added more physics and published new results. 
+					Now, the code consists of a modular C++ codebase and a Python interface wrapped into a package for the ease of use. The code can perform afterglow modelling in a variety of settings. 
+					However, its main advantage, I consider to be its modularity, that can be leveraged to easily extend its capability. 
+					<!-- I am an experienced modeler and data scientist with more than 5 years of professional experience in <strong>numerical simulations, data analysis, and machine learning</strong>. Developing and applying complex algorithms I have managed research projects and designed pipelines for “end-to-end” analysis of Big Data. I thrive in managing projects and working in multidisciplinary collaborations. I am passionate about modeling complex systems and making quantitative predictions from data. To this end, I prefer to continuously learn new tools, and methods and apply them to practical and theoretical problems.  -->
 				</p>
 				<p>
-				Please see below a non-exhaustive summary of my current and published reserach projects. See also my <a href="./resources/CV_VNEDORA_industry.pdf">CV</a> for a summary of my achievements.
+					In astrophysics, often, parameter inference is performed with Bayesian technics, e.g., MCMC, nested sampling. These tools require a model to be extremely fast, much faster than 
+					a code that needs to solve hundreds of ODEs and PDEs can be. So, I decided to build a surrogate model that would approximate the actual model. Specifically, I turned to variational auto-encoder 
+					(VAE) neural network, or even more specifically, a conditional VAE, that can learn a mapping between model input parameters and a model output. However, as PyBlastAfterglow has many settings and 
+					regimes, it is challenging to create surrogate models for all of them. I started the work and put the first results in a streamlit app that I developed. 
 				</p>
+				<p>
+					In closing, I would like to highlight other projects that I worked on during my academic career. These include building a bid data processing pipeline, statistical analysis model and a 
+					simple radiation transport model. These projects are published on my GitHug and all have MIT licencees. 
+					I learned a lot about software engineering, data science and collaborative work in the academy. 
+					I am looking forward to sharing these skills and knowledge wherever my professional journey takes me. 
+				</p>	
 			</div>
 			<div class="scroll-down">
 				<h3>Scroll Down</h3>
