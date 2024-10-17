@@ -1,1 +1,0 @@
-# vsevolodnedora.github.io
